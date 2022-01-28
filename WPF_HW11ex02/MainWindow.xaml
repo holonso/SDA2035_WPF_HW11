@@ -1,0 +1,75 @@
+﻿<Window x:Class="WPF_HW11ex02.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_HW11ex02"
+        mc:Ignorable="d"
+        Title="FlowerModel" Height="800" Width="600"
+        ResizeMode="NoResize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Path Data="M290,710 C250,620 255,650 264,564 268,522 300,517 295,469" 
+              HorizontalAlignment="Left" VerticalAlignment="Top" Grid.RowSpan="2"
+              Height="386" Width="43"
+              Margin="261.5,230.186,0,0" 
+              Stretch="Fill" 
+              Stroke="Green" StrokeThickness="5"/>
+        <Path Data="M260,111 C222,104 190,80 184,79 177,79 143,42 166,17 184,-2 285,-31 288,12 292,63 290,91 281,98" 
+              Fill="Khaki" Stretch="Fill" 
+              HorizontalAlignment="Left" VerticalAlignment="Top"
+              Height="85" Width="85"
+              Margin="203.246,71.636,0,0" 
+              Stroke="Indigo" StrokeThickness="3"/>
+        <Path Data="M271,189 C266,209 246,277 218,273 190,269 161,258 154,234 148,211 140,190 161,176 182,162 250,154 271,189" 
+              Fill="Khaki" Stretch="Fill"
+              HorizontalAlignment="Left" 
+              VerticalAlignment="Top"
+              Height="85" Width="85"
+              Margin="203.246,216.792,0,0" 
+              Stroke="Indigo" StrokeThickness="3"/>
+        <Path Data="M251.4,157.8 C165.8,174.6 147,174 130,157.8 114,141.3 120,103 126,100 131,97 136,40 179,70 212,92 266,97 257,125" 
+              Fill="Khaki" Stretch="Fill"
+              HorizontalAlignment="Left" VerticalAlignment="Top"
+              Height="85" Width="85"
+              Margin="172.876,131.792,0,0"  
+              Stroke="Indigo" StrokeThickness="3"/>
+        <Path Data="M330.6,159.4 C369.8,126.6 410,115 427,125 444,134 435,177 445,195 454,214 450,234 437,237 424,240 358,224 355,222 352,221 338,214 338,210" 
+              Fill="Khaki" Stretch="Fill" 
+              HorizontalAlignment="Left" VerticalAlignment="Top"
+              Height="85" Width="85"
+              Margin="334.693,142.8,0,0" 
+              Stroke="Indigo" StrokeThickness="3"/>
+        <Path Data="M278,150 C266,108 274,90 283,75 293,60 290,38 315,39 340,41 410,84 412,99 414,114 419,111 386,134 354,158 334,160 331,165" 
+              Fill="Khaki" Stretch="Fill"
+              HorizontalAlignment="Left" VerticalAlignment="Top"
+              Height="85" Width="85"
+              Margin="293.246,71.636,0,0" 
+              Stroke="Indigo" StrokeThickness="3"/>
+        <Path Data="M345,192 C395,202 397,192 410,220 422,248 438,274 411,289 385,303 383,291 379,308 375,325 369,338 342,325 316,312 318,306 315,277 313,248 313,226 313,226" 
+              Fill="Khaki" 
+              HorizontalAlignment="Left" VerticalAlignment="Top"
+              Height="85" Width="85"
+              Margin="309.5,216.792,0,0" 
+              Stretch="Fill" 
+              Stroke="Indigo" StrokeThickness="3"  />
+        <Ellipse Width="100" Height="100" 
+                 Stroke="Indigo" StrokeThickness="5"                 >
+            <Ellipse.Fill>
+                <RadialGradientBrush>
+                    <GradientStop Color="SkyBlue" Offset="1"/>
+                    <GradientStop Color="DarkBlue" Offset="0.308"/>
+                </RadialGradientBrush>
+            </Ellipse.Fill>
+        </Ellipse>
+        <Path Data="M262,636 C129,580 134,570 108,524 82,477 88,476 66,457 45,438 122,447 133,452 144,458 231,517 239,553 247,589 258,631 261,633 263,634 264,635 260,635" 
+              Fill="LightGreen" Stretch="Fill"
+              HorizontalAlignment="Left" VerticalAlignment="Top"
+              Height="160" Width="188"
+              Margin="88.246,0,0,0"  
+              Stroke="Green" StrokeThickness="5" Grid.Row="1"  />
+    </Grid>
+</Window>

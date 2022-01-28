@@ -1,0 +1,56 @@
+﻿<Window x:Class="WPF_HW11ex01.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_HW11ex01"
+        mc:Ignorable="d"
+        Title="RestrictionSignConcept" Height="400" Width="600">
+    <Window.Resources>
+        <EllipseGeometry x:Key="ellipse1" 
+                         Center="100,100" RadiusX="100" RadiusY="100" />
+        <EllipseGeometry x:Key="ellipse2" 
+                         Center="100,100" RadiusX="80" RadiusY="80" />
+    </Window.Resources>
+    <Grid>
+        
+        <Border HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Path Fill="Red" Stroke="Black" StrokeThickness="5">
+                <Path.Data>
+                    <CombinedGeometry GeometryCombineMode="Xor" 
+                                      Geometry1="{StaticResource ellipse1}"
+                                      Geometry2="{StaticResource ellipse2}"/>
+                </Path.Data>
+            </Path>
+        </Border>
+        
+        <Rectangle Width="170" Height="20" 
+                   Fill="Red" Stroke="Transparent"
+                   HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Rectangle.RenderTransform>
+                <RotateTransform Angle="-45" CenterX="85" CenterY="10"/>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        
+        <Border HorizontalAlignment="Center" VerticalAlignment="Center"
+                RenderTransformOrigin="0.033,0.955">
+            <Line Stroke="Black" StrokeThickness="5" 
+                  X1="0" Y1="0" X2="160" Y2="0" RenderTransformOrigin="-0.103,0.986">
+                <Line.RenderTransform>
+                    <RotateTransform Angle="-45" CenterX="83" CenterY="2"/>
+                </Line.RenderTransform>
+            </Line>
+        </Border>
+
+        <Border HorizontalAlignment="Center" VerticalAlignment="Center"
+                RenderTransformOrigin="0.033,0.955">
+            <Line Stroke="Black" StrokeThickness="5" 
+                  X1="0" Y1="0" X2="160" Y2="0" RenderTransformOrigin="-0.103,0.986">
+                <Line.RenderTransform>
+                    <RotateTransform Angle="-45" CenterX="112" CenterY="-6"/>
+                </Line.RenderTransform>
+            </Line>
+        </Border>
+
+    </Grid>
+</Window>
